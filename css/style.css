@@ -1,0 +1,122 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  /* Fixed Box */
+  .fixed-box {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  /* Positioning */
+  .relative-container {
+    position: relative;
+    background: #dceeff;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .relative-box {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: lightcoral;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Float and clear */
+  .float-left {
+    float: left;
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  .text {
+    overflow: hidden;
+  }
+  
+  .cleared {
+    clear: both;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  /* Circles */
+  .circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    margin-top: 40px;
+  
+  }
+  .center-wrapper{
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 1;
+  }
+  
+  .center {
+      background: orange;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .top {
+      background: blue;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .right {
+      background: yellow;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    .bottom {
+      background: red;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .left {
+      background: green;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
